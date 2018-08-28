@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+
+}
+
+h1{
+    display: inline-block;
+    margin: auto;
+    font-size: 30px;
+    font-family: 'Noto Sans TC';
+}
+.fa{
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Noto Sans TC';
+}
+
+#info.fa{
+    font-size: 30px;
+    text-align: center;
+}
+.ad-left .fa{
+    padding-left: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.fa-user-circle-o h2 {
+    margin-left: 5;
+    margin-right: 20;
+}
+
+p {
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+}
+
+text {
+    font-family: 'Noto Sans TC';
+    font-size: 18px;
+}
+
+a:link {
+    color: #84c4e2;
+}
+
+a:visited {
+    color: #84c4e2;
+}
+
+a:hover {
+    color: #cd82ad;
+}
+
+a:active {
+    color: #84c4e2;
+}
+
+.content {
+    padding: 10px;
+    background-color: #778DA9;
+    border-radius: 12px;
+}
+
+.amcharts-chart-div a {
+    display: none !important;
+}
+
+.chartdiv_cotent {
+    width: 50%;
+    height: 50%;
+    float: left;
+    display: inline-block;
+}
+
+#pic_analysis p{
+font-size: 24px;
+text-align: center;
+}
+.photo_container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 5 5 5 5;
+}
+.columnChart_container{
+    display: block;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;
+}
+.columnChart_description{
+    padding-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+#columnChartdiv {
+    width: 100%;
+    height: 25%;
+}
+
+.pieChartdiv_container{
+    display: block;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;   
+}
+.pieChartdiv_title{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+#pieChartdiv {
+    width: 100%;
+    height: 50%;
+}
+.pie_description{
+    width: 30%;
+    padding-bottom: 10px;
+    margin: auto;
+}
+#totalChartdiv {
+    width: 75%;
+    min-height: 300px;
+    margin: auto;
+}
+.totalChartdiv_container{
+    display: block;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;   
+}
+.totalChartdiv_title{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#totalChartdiv tspan{
+    font-size: 20x;
+}
+.rank_description{
+    width: 95%;
+}
+
+#DISCRadarChart{
+    width: 100%;
+    height: 500px;
+}
+
+
+#rankSkillChartdiv {
+	width	: 100%;
+	
+}	
+#rankExperiencechartdiv {
+	width	: 100%;
+}
+#rankTraitchartdiv {
+	width	: 100%;
+}	
+
+#SkillChartdiv {
+	width	: 100%;
+}
+
+#ExperienceChartdiv {
+  width: 100%;
+}
+
+#TraitChartdiv {
+  width: 100%;
+}
+						
+.ad-rankcolumn {
+/*  background-color: #f6f6f6;
+    border-radius: 12px;
+    margin-right: 2;*/
+}
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 5 5 5 5;
+    min-height: 300px;
+}
+.pic_analysis_container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 5 5 5 5;
+}
+.infodiv {
+    text-align: center;
+    padding: 10px;
+}
+
+.infodiv #info {
+    margin: auto;
+}
+
+
+.title {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.title h1{
+    font-size: 3rem;
+}
+.block {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 5 5 5 5;
+    height: 10%;
+	font-family: 'Jua';
+    font-size: 30px;
+}
+
+
+.chartdiv {
+    width: 800px;
+    height: 220px;
+}
+#picture{
+    display: block;
+    margin: auto;
+}
+#picture img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    width: 300px;
+}
+#comment{
+    margin:auto;
+}
+#comment p{
+    text-align:center;
+    font-family: 'Noto Sans TC','Roboto';
+    font-size: 24px;
+}
+
+.header_line {
+    border-bottom: 1px solid #399;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(51, 153, 153);
+    position: relative;
+}

@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>JOBOT-分析結果報表</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="amcharts/plugins/export/export.css" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="amcharts/amcharts.js"></script>
+    <script src="amcharts/pie.js"></script>
+    <!-- <script src="amcharts/plugins/export/export.min.js"></script>-->
+    <script src="amcharts/themes/light.js"></script>
+    <script src="amcharts/serial.js"></script>
+    <script src="amcharts/gauge.js"></script>
+     <script src="amcharts/radar.js"></script>
+    <!--字型FONTS-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Jua">
+</head>
+
+<body>
+    <div class="content">
+        <section>
+            <div class="title">
+                <h1>JOBOT-分析結果報表</h1>
+            </div>
+        </section>
+        <section>
+            <div class="infodiv">
+                <h2 id="info"></h2>
+            </div>
+        </section>
+        <div class="photo_container">
+            <div id="picture">
+            </div>
+        </div>
+        <div class="pic_analysis_container">
+            <div id="pic_analysis"></div>
+        </div>
+        <div class="columnChart_container">
+            <div class="columnChart_description">
+                <h3>根據你前面10題，顯示出你每一題文字的敘述結果</h3>
+            </div>
+            <div id="columnChartdiv"></div>
+        </div>
+        <div class="pieChartdiv_container">
+            <div class="pieChartdiv_title">
+            <h3>根據你最後10題的性向測驗，分析你是甚麼特色的佔比最重</h3>
+            </div>
+            <div id="pieChartdiv"></div>
+            <div class="pie_description">
+                <ul>
+                    <li><p>穩定者：較重實際，具備常識也重視常識</p></li>
+                    <li><p>協調者：非常合群又友善</p></li>
+                    <li><p>激發者：善於溝通協調，認為應該支持利他的理想目標</p></li>
+                    <li><p>夢想者：高瞻遠矚</p>  </li>
+                </ul>         
+        </div>
+        </div>
+
+
+
+        <div class="totalChartdiv_container">
+            <div class="totalChartdiv_title">
+            <h3>根據你前面10題文字敘述的回答，進行最後的統計結果分數，看出你是否為積極自信或消極負面的</h3>
+            </div>
+            <div id="totalChartdiv"></div>
+        </div>
+
+        <div class="container">
+            <br/>
+            <div>
+                <div>
+                    <h1>D-I-S-C</h1>
+                    <i class="fa fa-align-left"></i>
+                </div>
+                <div class="rank_description">
+                    <h3>根據你上傳的履歷表，針對「DISC」呈現出你的「軟實力」</h3>
+                    <ul>
+                        <li><P>D：領導(外向,理性)</P></li>
+                        <li><P>I：社交(外向,感性)</P></li>
+                        <li><P>S：穩健(內向,感性)</P></li>
+                        <li><P>C：謹慎(內向,理性)</P></li>
+                    </ul>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="DISCRadarChart"></div>
+        </div>
+
+        
+        <div class="container">
+            <br/>
+            <div>
+            	<div>
+            		<h1>技能分數排行</h1>
+            		<i class="fa fa-align-left"></i>
+            	</div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「技能」部分與此職缺之「技能」匹配度，進行分數之統計及其他應徵者排行</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="rankSkillChartdiv"></div>
+        </div>
+
+
+        <div class="container">
+            <br/>
+            <div>
+                <div><h1>學經歷分數排行</h1><i class="fa fa-align-left"></i></div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「學經歷」部分與此職缺之「學經歷」匹配度，進行分數之統計及其他應徵者排行</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="rankExperiencechartdiv"></div>
+        </div>
+        <div class="container">
+            <br/>
+            <div>
+                <div><h1>人格特質分數排行</h1><i class="fa fa-align-left"></i></div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「人格特質」部分與此職缺之「人格特質」匹配度，進行分數之統計及其他應徵者排行</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="rankTraitchartdiv"></div>
+        </div>
+        <div class="container">
+            <br/>
+            <div>
+                <div><h1>技能分數落點</h1><i class="fa fa-trophy"></i></div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「技能」部分與其他應徵者之履歷「技能」比較結果，看出你位在三標中的哪裡</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="SkillChartdiv"></div>
+        </div>
+        <div class="container">
+            <br/>
+            <div>
+                <div><h1>學經歷分數落點</h1><i class="fa fa-trophy"></i></div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「學經歷」部分與其他應徵者之履歷「學經歷」比較結果，看出你位在三標中的哪裡</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="ExperienceChartdiv"></div>
+        </div>
+        <div class="container">
+            <br/>
+            <div>
+                <div><h1>人格特質分數落點</h1><i class="fa fa-trophy"></i></div>
+                <div class="rank_description">
+                	<h3>根據你上傳的履歷表，針對「人格特質」部分與其他應徵者之履歷「人格特質」比較結果，看出你位在三標中的哪裡</h3>
+                </div>
+                </div>
+            <div class="ad-rankcolumn" id="TraitChartdiv"></div>
+        </div>
+        <div class="block">
+            <div class="ad-rankcolumn" id="comment"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+</script>
